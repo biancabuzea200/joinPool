@@ -22,3 +22,6 @@ yarn
 ```sh
 npm run node
 ```
+
+3. Run the project to join a pool 
+```npx ts-node index.ts```
