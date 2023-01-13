@@ -15,9 +15,6 @@ dotenv.config();
 
 const { ALCHEMY_URL: jsonRpcUrl } = process.env;
 
-/*
-Example showing how to use Pools module to join pools.
-*/
 async function join() {
   const network = Network.MAINNET;
   const rpcUrl = "http://127.0.0.1:8545";
@@ -25,7 +22,7 @@ async function join() {
   const signer = provider.getSigner();
   const signerAddress = await signer.getAddress();
 
-  // 50/50 WBTC/WETH Pool
+  // we will join the 50/50 WBTC/WETH Pool
   const poolId = ADDRESSES[network].WBTCWETH?.id as string;
   //const poolId = balancer.pools [network].WBTCWETH?.id as string;
   // Tokens that will be provided to pool by joiner

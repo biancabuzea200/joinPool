@@ -10,18 +10,18 @@ git clone https://github.com/biancabuzea200/joinPool
 cd joinPool
 
 # install using NPM or Yarn
-npm intstall
+npm install
 
 # or
 
 yarn
 ```
 
-2. To start the local Hardhat node
+2. In a second terminal navigate to your repo, then start a local Hardhat node using the following command:
 
 ```sh
-npm run node
+npx hardhat node
 ```
 
-3. Run the project to join a pool 
-```npx ts-node index.ts```
+3. Run the project to join a pool
+   `npx ts-node index.ts`
